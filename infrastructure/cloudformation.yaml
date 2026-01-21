@@ -325,7 +325,7 @@ Resources:
     Properties:
       ApplicationId: !GetAtt QBusinessApp.ApplicationId
       RoleArn: !GetAtt QBusinessWebExperienceServiceRole.Arn
-      Title: Demo Government AI Assistant
+      Title: ConnexFM 2026 AI Assistant
       Subtitle: Providing secure information access for public sector agencies
       WelcomeMessage: Welcome to your secure AI assistant. I can help you find
         information from approved government resources. How may I assist you

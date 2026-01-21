@@ -77,7 +77,7 @@ app.get('/', noCacheMiddleware, async (req, res) => {
       <body>
           <div class="container">
               <div class="header">
-                  <h1>Demo Government Agency GenAI Chatbot</h1>
+                  <h1>ConnexFM 2026 GenAI Chatbot</h1>
               </div>
               <div class="info">
                   <div class="status">
