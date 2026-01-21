@@ -326,7 +326,7 @@ Resources:
       ApplicationId: !GetAtt QBusinessApp.ApplicationId
       RoleArn: !GetAtt QBusinessWebExperienceServiceRole.Arn
       Title: ConnexFM 2026 AI Assistant
-      Subtitle: Providing secure information access for public sector agencies
+      Subtitle: Providing secure information access for Facilities Managers nationwide
       WelcomeMessage: Welcome to your secure AI assistant. I can help you find
         information from approved government resources. How may I assist you
         today?
