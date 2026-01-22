@@ -54,7 +54,7 @@ app.get('/', noCacheMiddleware, async (req, res) => {
     const command = new CreateAnonymousWebExperienceUrlCommand({
       applicationId: qbusinessConfig.QBUSINESS_APP_ID,
       webExperienceId: qbusinessConfig.QBUSINESS_WEB_EXP_ID,
-      sessionDurationInMinutes: parseInt(process.env.SESSION_DURATION_MINUTES || '15', 10)
+      sessionDurationInMinutes: parseInt(process.env.SESSION_DURATION_MINUTES || '120', 10)
     });
     const response = await client.send(command);
     const anonymousUrl = response.anonymousUrl;
@@ -91,7 +91,7 @@ app.get('/', noCacheMiddleware, async (req, res) => {
           <script>
             // Safely pass server data to client with validation
             const sessionId = ${JSON.stringify(sessionId)}; // nosemgrep: unknown-value-with-script-tag
-            const sessionDuration = ${JSON.stringify(parseInt(sessionDuration, 10))}; // nosemgrep: unknown-value-with-script-tag
+            const sessionDuration = ${JSON.stringify(parseInt(sessionDuration, 120))}; // nosemgrep: unknown-value-with-script-tag
             const anonymousUrl = ${JSON.stringify(anonymousUrl)};
             
             // Validate inputs
