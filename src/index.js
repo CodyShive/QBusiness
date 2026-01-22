@@ -60,7 +60,7 @@ app.get('/', noCacheMiddleware, async (req, res) => {
     const anonymousUrl = response.anonymousUrl;
     
     // Session duration
-    const sessionDuration = parseInt(process.env.SESSION_DURATION_MINUTES || '15', 10);
+    const sessionDuration = parseInt(process.env.SESSION_DURATION_MINUTES || '120', 10);
     const sessionId = Date.now().toString();
     
     // Send HTML with the iframe already configured
