@@ -328,7 +328,7 @@ Resources:
       Title: ConnexFM 2026 AI Assistant
       Subtitle: Providing secure information access for Facilities Managers nationwide
       WelcomeMessage: Welcome to your secure AI assistant. I can help you find
-        information from approved Facilities Management resources. How may I assist you
+        information from approved government resources. How may I assist you
         today?
       SamplePromptsControlMode: ENABLED
       Origins: !Ref DeveloperOrigins
