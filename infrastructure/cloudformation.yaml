@@ -326,7 +326,7 @@ Resources:
       ApplicationId: !GetAtt QBusinessApp.ApplicationId
       RoleArn: !GetAtt QBusinessWebExperienceServiceRole.Arn
       Title: Facilities Management Chatbot Demonstration (for ConnexFM 2026)
-      Subtitle: Providing secure information access for public sector agencies
+      Subtitle: Providing secure information access for Facilities Managers
       WelcomeMessage: Welcome to your secure AI assistant. I can help you find
         information from approved facilities management resources. How may I assist you
         today?

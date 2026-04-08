@@ -1,4 +1,4 @@
-#!/bin/bash
+|#!/bin/bash
 set -e
 
 clear
@@ -48,14 +48,14 @@ echo "─ APPLICATION SETUP ─────────────────�
 echo ""
 # Get application name - skip prompt if GitHub integration provided
 if [[ -n "$GITHUB_REPO" && -n "$GITHUB_TOKEN" ]]; then
-    APP_NAME="GovAI"
+    APP_NAME="FacilitiesManagementAI"
     echo "✅ Application name: $APP_NAME (auto-selected for CI/CD)"
 else
     # Interactive mode with validation
     while true; do
-        printf "Application name [GovAI]: "
+        printf "Application name [FacilitiesManagementAI]: "
         read APP_NAME
-        APP_NAME=${APP_NAME:-"GovAI"}
+        APP_NAME=${APP_NAME:-"FacilitiesManagementAI"}
         # Trim spaces
         APP_NAME=$(echo "$APP_NAME" | tr -d ' ')
         
