@@ -54,13 +54,13 @@ app.get('/', noCacheMiddleware, async (req, res) => {
     const command = new CreateAnonymousWebExperienceUrlCommand({
       applicationId: qbusinessConfig.QBUSINESS_APP_ID,
       webExperienceId: qbusinessConfig.QBUSINESS_WEB_EXP_ID,
-      sessionDurationInMinutes: parseInt(process.env.SESSION_DURATION_MINUTES || '15', 10)
+      sessionDurationInMinutes: parseInt(process.env.SESSION_DURATION_MINUTES || '30', 10)
     });
     const response = await client.send(command);
     const anonymousUrl = response.anonymousUrl;
     
     // Session duration
-    const sessionDuration = parseInt(process.env.SESSION_DURATION_MINUTES || '15', 10);
+    const sessionDuration = parseInt(process.env.SESSION_DURATION_MINUTES || '30', 10);
     const sessionId = Date.now().toString();
     
     // Send HTML with the iframe already configured
